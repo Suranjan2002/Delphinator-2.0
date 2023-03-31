@@ -169,4 +169,4 @@ def base32_decoder():
 
 #MAIN METHOD
 if __name__=='__main__':
-    app.run(debug=True, port=2581)
+    app.run(debug=True)
