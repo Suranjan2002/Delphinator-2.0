@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords"
+        content="cybersecurity, cipher, cyber, security, hash, encryption, md5, sayak, karar, suranjan, saha, preetam, bhattacharya, aniket, pal">
+    <meta name="author" content="The Hacktivists">
+
+    <title>ROT13 Cipher - Delphinator</title>
+
+    <!-- =============== FAVICONS =============== -->
+    <link href="../static/img/logo.png" rel="icon">
+    <link href="../static/img/logo.png" rel="apple-touch-icon">
+
+    <!-- =============== VENDOR CSS =============== -->
+    <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../static/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../static/vendor/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- =============== TAILWIND CSS =============== -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- =============== STYLE CSS =============== -->
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <!-- =======================================================
+    * PROJECT NAME: DELPHINATOR
+    * TEAM NAME: THE HACKTIVISTS
+    * AUTHOR: SAYAK KARAR
+    ======================================================== -->
+</head>
+
+<body>
+
+ <!-- =============== HEADER =============== -->
+ <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <!-- ~~~~~~~~~~~~~~~ Logo & Title ~~~~~~~~~~~~~~~ -->
+      <div class="logo">
+        <a href="index.html"><img src="../static/img/logo.png" class="img-fluid"></a>
+        <h1><a href="/"><span>Delphinator</span></a></h1>
+      </div>
+
+      <!-- ~~~~~~~~~~~~~~~ Navigation Bar ~~~~~~~~~~~~~~~ -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li class="dropdown scrollto"><a href="#"><span>Features</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/combo_cipher" target="_blank">Combi-pher</a></li>
+              <li><a href="/rot13" target="_blank">ROT13 Cipher</a></li>
+              <li><a href="/base" target="_blank">Base Cipher</a></li>
+              <li><a href="/rsa" target="_blank">RSA Cipher</a></li>
+              <li><a href="/morse_code" target="_blank">Morse Code</a></li>
+              <li><a href="/md5hash" target="_blank">MD5 Hash</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="/#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+          <li><a href="mailto:wearehacktivists@gmail.com"><button type="button" class="btn btn-primary">Send
+                Email</button></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+    
+    <!-- =============== HERO SECTION =============== -->
+    <section id="hero">
+
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+                    <div data-aos="zoom-out">
+                        <h1>Let Us Understand ROT13 Cipher With <span>Delphinator 2.0</span></h1>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+                    <img src="../static/img/hero-img6.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs>
+                <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+            </defs>
+            <g class="wave1">
+                <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+            </g>
+            <g class="wave2">
+                <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+            </g>
+            <g class="wave3">
+                <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+            </g>
+        </svg>
+
+    </section>
+
+    <main id="main">
+
+        <!-- =============== CIPHER SECTION =============== -->
+        <section class="contact">
+            <div class="container">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h2>ROT13 Cipher</h2>
+                    <p>Let's Try It Out</p>
+                </div>
+
+                <div class="row">
+
+                    <!-- ~~~~~~~~~~~~~~~ Flowchart ~~~~~~~~~~~~~~~ -->
+                    <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                        <div class="info">
+                            <div class="email">
+                                <img src="../static/img/rot13.svg" class="img-fluid"
+                                    style="height: 23rem; width: 23rem;">
+                                <p style="text-align: justify; padding: 0 7rem 0 0; margin-top: 1rem;">ROT13 (rotate by
+                                    13 places) is a simple substitution cipher used to obfuscate text. The cipher
+                                    replaces each letter in the plaintext with the letter 13 positions ahead in the
+                                    alphabet, wrapping around from Z to A if necessary. The cipher is symmetric, meaning
+                                    that applying it twice will result in the original plaintext.
+                                    ROT13 has its origins in ancient Greece, where it was used as a shift cipher. In
+                                    modern times, it gained popularity in the Usenet newsgroup community in the 1980s
+                                    and 1990s as a way to obfuscate spoilers or offensive content.
+                                    <br>
+                                <h5 style="font-style: italic;">Source: cscx.org</h5>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+
+                        <!-- ~~~~~~~~~~~~~~~ Cipherntext Input ~~~~~~~~~~~~~~~ -->
+                        <div role="form" class="contact-form">
+                            <div class="row">
+                                <div class="form-group mt-3">
+                                    <label for="text" class="leading-7 text-sm text-black-600">Ciphertext</label>
+                                    <div class="form-control hash">
+                                        <p>{{ptext}}</p>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="text" class="leading-7 text-sm text-black-600">Key</label>
+                                    <div class="form-control hash">
+                                        <p>{{key}}</p>
+                                    </div>
+                                </div>
+                                </form>
+
+                                <!-- ~~~~~~~~~~~~~~~ Plaintext Display ~~~~~~~~~~~~~~~ -->
+                                <div class="form-group mt-3">
+                                    <label for="text" class="leading-7 text-sm text-black-600">Plaintext</label>
+                                    <div class="form-control hash">
+                                        <p id="hash">{{rotresult}}</p>
+                                    </div>
+                                </div>
+                                <div class="text-center mb-4"><button class="copy-text"
+                                        onclick="copyToClipBoard('hash')">Copy
+                                        Plaintext</button></div>
+                                <a class="text-center mb-4" href="/rot13"
+                                    onMouseOver="self.status.referrer; return true">
+                                    <div class="text-center mb-4"><button class="copy-text">Try Again</button></div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+        </section>
+
+
+        <!-- =============== FACTS SECTION =============== -->
+        <section id="faq" class="faq section-bg">
+            <div class="container">
+
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Did You Know?</h2>
+                    <p>Let's Learn More</p>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+
+                        <!-- ~~~~~~~~~~~~~~~ Question 1 ~~~~~~~~~~~~~~~ -->
+                        <li data-aos="fade-up">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                                data-bs-target="#faq-list-1">What is the ROT13 cipher and how does it work?<i
+                                    class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                                <p>
+                                    The ROT13 cipher is a simple substitution cipher that replaces each letter in the
+                                    plaintext with the letter 13 positions ahead in the alphabet, wrapping around from Z
+                                    to A if necessary. The cipher is symmetric, meaning that applying it twice will
+                                    result in the original plaintext.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- ~~~~~~~~~~~~~~~ Question 2 ~~~~~~~~~~~~~~~ -->
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-2" class="collapsed">Is ROT13 a secure cipher for encrypting
+                                sensitive information?<i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    No, ROT13 is not a secure cipher and can be easily decrypted by anyone with
+                                    knowledge of the cipher. It is not recommended for encrypting sensitive information.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- ~~~~~~~~~~~~~~~ Question 3 ~~~~~~~~~~~~~~~ -->
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-3" class="collapsed">In what scenarios is ROT13 commonly
+                                used?<i class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    ROT13 is commonly used as a basic form of data obfuscation, such as in web form
+                                    submissions where personal information like email addresses and phone numbers are
+                                    encoded to prevent web scraping. It is also used in the Usenet newsgroup community
+                                    to obfuscate spoilers or offensive content.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- ~~~~~~~~~~~~~~~ Question 4 ~~~~~~~~~~~~~~~ -->
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                data-bs-target="#faq-list-4" class="collapsed">Can ROT13 be used to encrypt
+                                non-alphabetic characters like numbers and symbols?<i
+                                    class="bx bx-chevron-down icon-show"></i><i
+                                    class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    No, ROT13 is designed to work only with alphabetic characters. Non-alphabetic
+                                    characters are left unchanged in the ciphertext.
+                                </p>
+                            </div>
+                        </li>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =============== FOOTER =============== -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-info">
+                                <h3>Delphinator</h3>
+                                <p class="pb-3"><em>The Delphic Simulator</em>
+                                </p>
+                                <p>
+                                    The Hacktivists<br><br>
+                                    <strong>Email: </strong>wearehacktivists@gmail.com<br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- ~~~~~~~~~~~~~~~ Useful Links ~~~~~~~~~~~~~~~ -->
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#about">About Us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#team">Our Team</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- ~~~~~~~~~~~~~~~ Features~~~~~~~~~~~~~~~ -->
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Our Features</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/combo_cipher"
+                                        target="_blank">Combi-pher</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/rot13" target="_blank">ROT13
+                                        Cipher</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/base" target="_blank">Base Cipher</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/rsa" target="_blank">RSA Cipher</a>
+                                </li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/morse_code" target="_blank">Morse
+                                        Code</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/md5hash" target="_blank">MD5 Hash</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- ~~~~~~~~~~~~~~~ Digital Clock ~~~~~~~~~~~~~~~ -->
+                        <div class="col-lg-4 col-md-6 footer-newsletter" data-count="2021/12/3">
+                            <div class="date">
+                                <span>Day</span>,
+                                <span>Month</span>
+                                <span>Date</span>,
+                                <span>Year</span>
+                            </div>
+
+                            <div class="time">
+                                <div>
+                                    <h3>00</h3>
+                                    <h4>Hours</h4>
+                                </div>
+                                <div>
+                                    <h3>00</h3>
+                                    <h4>Minutes</h4>
+                                </div>
+                                <div>
+                                    <h3>00</h3>
+                                    <h4>Seconds</h4>
+                                </div>
+                                <div>
+                                    <h3>AM</h3>
+                                    <h4>AM/PM</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Delphinator</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="https://wearethehacktivists.netlify.app/" target="_blank">The
+                            Hacktivists</a>
+                    </div>
+                </div>
+        </footer>
+
+        <!-- =============== BACK TO TOP ARROW =============== -->
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+        <div id="preloader"></div>
+
+        <!-- =============== VENDOR JS =============== -->
+        <script src="../static/vendor/aos/aos.js"></script>
+        <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="../static/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="../static/vendor/purecounter/purecounter.js"></script>
+        <script src="../static/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+        <!-- =============== MAIN JS =============== -->
+        <script src="../static/js/main.js"></script>
+
+        <!-- =============== ICONIFY JS =============== -->
+        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+</body>
+
+</html>
